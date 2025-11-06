@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Campaign Performance Dashboard</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e8f3ff, #ffffff);
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 45px;
+      font-size: 30px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 98%;
+      max-width: 1400px;
+      height: 850px;
+      border: none;
+      border-radius: 16px;
+      margin: 30px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    iframe:hover {
+      transform: scale(1.015);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+    }
+
+    /* Insights Section */
+    .insights {
+      max-width: 1100px;
+      background: #ffffffcc;
+      border-radius: 16px;
+      padding: 30px 40px;
+      margin: 60px 0;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease;
+    }
+
+    .insights h3 {
+      color: #003366;
+      font-size: 26px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .insights ul {
+      list-style-type: "✅ ";
+      color: #222;
+      font-size: 18px;
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Ad Campaign Performance Dashboard</h2>
+
+  <iframe 
+    src="https://embed.mylens.ai/naira-othman-tamers-workspace-tg4pvm/ad-campaign-performance-dashboard-sut4jg/?layout=detailed" 
+    allowfullscreen></iframe>
+
+  <iframe 
+    src="https://embed.mylens.ai/naira-othman-tamers-workspace-tg4pvm/monthly-revenue-trends-peaks-h8u996/?layout=detailed" 
+    allowfullscreen></iframe>
+
+  <iframe 
+    src="https://embed.mylens.ai/naira-othman-tamers-workspace-tg4pvm/monthly-growth-vs-conversion-efficiency-jdqgud/?layout=detailed" 
+    allowfullscreen></iframe>
+
+  <iframe 
+    src="https://embed.mylens.ai/naira-othman-tamers-workspace-tg4pvm/customer-type-revenue-conversions-jgvtfg/?layout=detailed" 
+    allowfullscreen></iframe>
+
+  <iframe 
+    src="https://embed.mylens.ai/naira-othman-tamers-workspace-tg4pvm/monthly-revenue-by-customer-type-5lmdgu/?layout=detailed" 
+    allowfullscreen></iframe>
+
+  <div class="insights">
+    <h3>Insights & Recommendations</h3>
+    <ul>
+      <li>Loyal customers generate the highest revenue and conversions — maintain loyalty programs and personalized offers.</li>
+      <li>Revenue peaks between December and March — plan seasonal promotions and allocate more ad spend during this period.</li>
+      <li>February and March show growth without matching efficiency — refine targeting and optimize conversion strategy.</li>
+      <li>New customers display high conversion value — enhance onboarding campaigns to convert them into loyal clients.</li>
+      <li>Use weather-based promotions (e.g., discounts on rainy days) to sustain engagement during low-tourist seasons.</li>
+    </ul>
+  </div>
+
+  <script>
+    // Smooth scroll to insights when the page loads
+    window.onload = () => {
+      setTimeout(() => {
+        document.querySelector('.insights').scrollIntoView({ behavior: 'smooth' });
+      }, 2000);
+    };
+  </script>
+</body>
+</html>
